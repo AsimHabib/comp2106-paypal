@@ -20,7 +20,7 @@ router.post('/', function(req, res) {
   var payment = {
   "intent": "sale",
   "payer": {
-    "payment_method": "paypal" // from credit cart change it to credit_card
+    "payment_method": "paypal" 
   },
   "redirect_urls": {
     "return_url": callBackURL +"/paynow/success",
