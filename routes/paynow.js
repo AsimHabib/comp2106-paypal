@@ -2,7 +2,9 @@ var express = require('express');
 var router = express.Router();
 var paypal = require('paypal-rest-sdk');
 
-let callBackURL  = "http://localhost:3000";
+//let callBackURL  = "http://localhost:3000";
+let callBackURL  = "https://comp2106-paypal.herokuapp.com/";
+
 
 router.get('/success', function(req, res, next) {
   res.render('success', { title: 'Success' });
